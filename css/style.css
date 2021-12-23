@@ -2,6 +2,10 @@
     font-family: "Titillium Web", Arial, sans-serif;
 }
 
+body{
+    min-width: 320px;
+}
+
 .container{
     width: 1100px;
     margin: 0 auto;
@@ -9,9 +13,17 @@
     padding-right: 15px;
 }
 
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column wrap;
+    list-style: none;
+    padding: 0;
+}
+
 @media (min-width: 768px) {
     .main-nav{
-        flex-flow: column nowrap;
+
     }
 }
 
@@ -21,15 +33,14 @@
     }
     .main-nav{
         flex-flow: row wrap;
-        justify-content: space-between;
     }
 }
 
-.main-nav{
-    display: flex;
-    list-style: none;
-    padding: 0;
-}
+
+
+
+
+
 
 .main-nav::after{
     content: '';
