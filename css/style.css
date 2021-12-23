@@ -9,11 +9,25 @@
     padding-right: 15px;
 }
 
+@media (min-width: 768px) {
+    .main-nav{
+        flex-flow: column nowrap;
+    }
+}
+
+@media (min-width: 992px) {
+    .nav-button__toggle{
+        display: none;
+    }
+    .main-nav{
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+}
+
 .main-nav{
-    list-style: none;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    list-style: none;
     padding: 0;
 }
 
