@@ -79,21 +79,7 @@ body{
 /*    }*/
 /*}*/
 
-@media (max-width: 992px) {
 
-    .nav-button{
-        display: block;
-    }
-
-    .main-nav{
-        display: none;
-        flex-flow: column wrap;
-    }
-
-    .main-nav--closed{
-        display: block;
-    }
-}
 
 .main-nav::after{
     content: '';
@@ -124,7 +110,28 @@ h1{
 
 .banner{
     min-height: 450px;
+    width: auto;
+    background-position: right 30% bottom 50%;
     background-image: url("../img/dev-min.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+@media (max-width: 992px) {
+    .container{
+        width: auto;
+    }
+    .nav-button{
+        display: block;
+    }
+
+    .main-nav{
+        display: none;
+        flex-flow: column wrap;
+    }
+
+    .main-nav--closed{
+        display: block;
+    }
+
 }
