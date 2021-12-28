@@ -16,31 +16,84 @@ body{
 .main-nav{
     display: flex;
     justify-content: space-between;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     list-style: none;
     padding: 0;
 }
 
-@media (min-width: 768px) {
-    .main-nav{
-
-    }
+.nav-button{
+    display: none;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border: 0;
+    padding: 0;
+    background-color: #ffffff;
 }
 
-@media (min-width: 992px) {
-    .nav-button__toggle{
+.close::before{
+    transform: rotate(45deg);
+}
+
+.close::after{
+    transform: rotate(-45deg);
+}
+
+.nav-button__toggle{
+    width: 40px;
+    height: 3px;
+    background-color: black;
+    border-radius: 3px;
+    transition: background-color 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+.close{
+    background-color: #fff;
+}
+
+.nav-button__toggle::before, .nav-button__toggle::after{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    left: 0px;
+    background-color: black;
+    border-radius: 3px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+.nav-button__toggle::before{
+    top: 20px;
+    transform-origin: 0% 0%;
+
+}
+
+.nav-button__toggle::after{
+    top: 47px;
+    transform-origin: 0 100%;
+}
+
+/*@media (max-width: 768px) {*/
+/*    .main-nav{*/
+/*        display: none;*/
+/*    }*/
+/*}*/
+
+@media (max-width: 992px) {
+
+    .nav-button{
+        display: block;
+    }
+
+    .main-nav{
         display: none;
+        flex-flow: column wrap;
     }
-    .main-nav{
-        flex-flow: row wrap;
+
+    .main-nav--closed{
+        display: block;
     }
 }
-
-
-
-
-
-
 
 .main-nav::after{
     content: '';
