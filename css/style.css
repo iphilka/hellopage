@@ -122,16 +122,21 @@ h1{
     text-align: center;
 }
 
+.contacts p{
+    margin-bottom: 35px;
+}
+
 .button{
     border-radius: 20px;
     background-color: #000000;
     padding: 15px 35px;
     text-align: center;
     text-decoration: none;
+    text-transform: uppercase;
     color: #F6F6F6;
     display: block;
     width: 250px;
-    margin: 0 auto 20px;
+    margin: 0 auto 35px;
 }
 
 .social-networks{
@@ -139,7 +144,7 @@ h1{
     display: flex;
     justify-content: space-around;
     width: 330px;
-    margin: 0 auto;
+    margin: 0 auto 30px;
     padding: 0;
 
 }
