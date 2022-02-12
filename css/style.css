@@ -154,6 +154,10 @@ h1{
     height: 55px;
 }
 
+.contacts-info{
+    color: #828282;
+}
+
 @media (max-width: 992px) {
     .container{
         width: auto;
