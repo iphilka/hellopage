@@ -215,6 +215,15 @@ h1{
         display: block;
     }
 
+    .skill-item img{
+        width: 95px;
+        height: 95px;
+    }
+
+    .skill-item{
+        margin-bottom: 25px;
+    }
+
     .break{
         display: none;
     }
