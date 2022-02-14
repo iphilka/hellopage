@@ -109,6 +109,10 @@ h1{
     font-size: 48px;
 }
 
+.about{
+    text-align: center;
+}
+
 .skills-list{
     list-style: none;
     display: flex;
@@ -185,6 +189,15 @@ h1{
 }
 
 .contacts-info{
+    color: #828282;
+}
+
+footer{
+    text-align: center;
+}
+
+footer p{
+    font-size: 10px;
     color: #828282;
 }
 
