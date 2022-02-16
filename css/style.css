@@ -109,8 +109,31 @@ h1{
     font-size: 48px;
 }
 
+.short-info{
+    display: flex;
+    align-items: flex-end;
+}
+
+.short-info p{
+    margin-left: 250px;
+
+    font-size: 24px;
+}
+
 .about{
     text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.about p{
+    font-size: 20px;
+}
+
+.about a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #0971ba;
 }
 
 .skills-list{
@@ -217,6 +240,10 @@ footer p{
     }
 
     .main-nav--closed{
+        display: block;
+    }
+
+    .short-info{
         display: block;
     }
 
