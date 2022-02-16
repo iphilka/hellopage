@@ -116,7 +116,6 @@ h1{
 
 .short-info p{
     margin-left: 250px;
-
     font-size: 24px;
 }
 
@@ -245,6 +244,10 @@ footer p{
 
     .short-info{
         display: block;
+    }
+
+    .short-info p {
+        margin-left: 0px;
     }
 
     .social-networks{
