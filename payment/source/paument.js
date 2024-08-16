@@ -2389,19 +2389,7 @@ B(_QrV, "secretString", ""),
   B(_QrV, "knockCount", 0);
 let QrV = _QrV;
 var jsIsIphone = QrBrowser.isIphone();
-log(
-    " jsIsIphone=" +
-    jsIsIphone +
-    " forcedReload=" +
-    forcedReload,
-);
-!forcedReload &&
-  (log("force reload with isIphone=" + jsIsIphone),
-  (window.location.href =
-    window.location.href + "=" + (jsIsIphone ? "1" : "0")));
-document.addEventListener("DOMContentLoaded", function () {
-  QrV.render(), QrV.sendEvent("view");
-});
+
 window.QrV = QrV;
 window.onerror = function (t, r, n) {
   log("JSERR:" + t + " URL:" + r + " line:" + n);
