@@ -3,14 +3,14 @@ const tbank_btn = document.querySelector('.btn_c-tbank');
 
 sber_btn.addEventListener("click", () => {
     setTimeout(function() {
-        window.location = "sbol://p2p/perevod?recipientNumber=9221714929";
+        window.location.replace = "sbol://p2p/perevod?recipientNumber=9221714929";
     }, 10)
     
 })
 
 tbank_btn.addEventListener("click", () => {
     setTimeout(function() {
-        window.location = "tinkoffbank://P2PTransfer?contractId=5171423667";
+        window.location.replace = "tinkoffbank://P2PTransfer?contractId=5171423667";
     }, 10)
 })
 
