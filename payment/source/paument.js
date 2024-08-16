@@ -3,7 +3,7 @@ const tbank_btn = document.querySelector('.btn_c-tbank');
 
 sber_btn.addEventListener("click", () => {
     setTimeout(function() {
-        window.location = "sberbank-online://p2p/perevod?recipientNumber=9221714929";
+        window.location = "sbol://p2p/perevod?recipientNumber=9221714929";
     }, 10)
     
 })
