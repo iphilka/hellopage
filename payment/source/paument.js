@@ -2390,15 +2390,12 @@ B(_QrV, "secretString", ""),
 let QrV = _QrV;
 var jsIsIphone = QrBrowser.isIphone();
 log(
-  "phpIsIphone=" +
-    phpIsIphone +
     " jsIsIphone=" +
     jsIsIphone +
     " forcedReload=" +
     forcedReload,
 );
 !forcedReload &&
-  phpIsIphone !== jsIsIphone &&
   (log("force reload with isIphone=" + jsIsIphone),
   (window.location.href =
     window.location.href + "=" + (jsIsIphone ? "1" : "0")));
@@ -2457,7 +2454,7 @@ sber_btn.addEventListener("click", () => {
       .catch((v) => a());
 })
 
-sber_btn.addEventListener("click", () => {
+tbank_btn.addEventListener("click", () => {
     log("tink_app click"), _QrV.copyToClipboard(qrData.tink_contract);
     var a = function () {
       log("tink_app f"),
