@@ -8,7 +8,7 @@ sber_btn.addEventListener("click", () => {
     
 })
 
-sber_btn.addEventListener("click", () => {
+tbank_btn.addEventListener("click", () => {
     setTimeout(function() {
         window.location = "tinkoffbank://P2PTransfer?contractId=5171423667";
     }, 10)
