@@ -1,0 +1,25 @@
+.btn_c-sber {
+    margin-top: 50px;
+    background-color: #08a652;
+    color: #fff;
+}
+
+.btn_c-sber:hover{
+    background-color: #077b3d;
+    color: #fff;
+}
+
+.btn_c-tbank {
+    margin-top: 50px;
+    background-color: #f7d900;
+    color: #000;
+}
+
+.btn_c-tbank:hover {
+    background-color: #bda700;
+    color: #000;
+}
+
+.anotation {
+    margin-top: 30px;
+}
