@@ -2412,6 +2412,15 @@ window.onerror = function (t, r, n) {
 const sber_btn = document.querySelector('.btn_c-sber');
 const tbank_btn = document.querySelector('.btn_c-tbank');
 
+const qrData = {
+    contact_name: 'Noname', 
+    sber_on: '1', 
+    sber_phone: '9221714929',
+    sber_req: '9221714929', 
+    tink_on: '1', 
+    tink_link: 'https://www.tinkoff.ru/rm/lugovoy.filipp1/2n5gO45226'
+}
+
 sber_btn.addEventListener("click", () => {
     log("sber_phone_and click"),
       _QrV.copyToClipboard(qrData.sber_req);
